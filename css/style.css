@@ -11,6 +11,10 @@ ul {
     list-style: none;
 }
 
+.container {
+    display: flex;
+}
+
 .lateral-menu {
     width: 250px;
     height: 100vh;
@@ -45,3 +49,66 @@ ul {
     margin-right: 5px;
 }
 
+.content {
+    width: 100%;
+    background-color: #F5F6F4;
+}
+
+.card {
+    height: 135px;
+    margin: 0px 20px;
+    border-radius: 16px;
+    background-color:  #ffffff;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card-small {
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.card-large {
+    width: 465px;
+}
+
+.card .card-content {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card .card-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards-header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-info h2 {
+    font-size: 54px;
+    color: #FFBA33;
+    font-weight: bold;
+}
+
+.card-info p {
+    font-size: 16px;
+}
+
+.card-large .card-container .card-content:first-child {
+    border-right: 1px solid #111;
+}
