@@ -75,19 +75,24 @@
             </div>
           </div>
         </div>
-        <div class="table">
-          <h5>Últimos Filmes</h5>
-          <table id="films-table">
-            <thead>
-              <tr>
-                <th>Título</th>
-                <th>Estréia</th>
-                <th>Diretor</th>
-                <th>Episódio</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+        <div class="cards-info">
+          <div class="table">
+            <h5>Últimos Filmes</h5>
+            <table id="films-table">
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Estréia</th>
+                  <th>Diretor</th>
+                  <th>Episódio</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="chart">
+            <div id="piechart" style="width: 320px; height: 400px"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -98,6 +103,10 @@
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
