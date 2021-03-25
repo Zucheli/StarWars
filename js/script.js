@@ -4,6 +4,7 @@ const planetasContador = document.getElementById("planetas");
 const navesContador = document.getElementById("naves");
 
 preencherContadores();
+preencherTabela();
 
 function preencherContadores() {
   Promise.all([
@@ -19,11 +20,21 @@ function preencherContadores() {
   });
 }
 
+async function preencherTabela() {
+  const response = await swapiGet("films/");
+  const tableData = response.data.results;
+  tableData.forEach((film) => {
+    $("#films-table").append(
+        `<tr>
+            <td>${film.title}</td>
+            <td>${moment(film.release_date).format('DD/MM/YYYY')}</td>
+            <td>${film.director}</td>
+            <td>${film.episode_id}</td>
+        <tr>`
+    );
+  });
+}
+
 function swapiGet(param) {
   return axios.get(`https://swapi.dev/api/${param}`);
 }
-
-Promise.all([getUserAccount(), getUserPermissions()]).then(function (results) {
-  const acct = results[0];
-  const perm = results[1];
-});
