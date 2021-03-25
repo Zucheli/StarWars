@@ -25,7 +25,7 @@ async function desenharGrafico() {
   var data = google.visualization.arrayToDataTable(dataArray);
 
   var options = {
-    title: "Species by Film",
+    title: "Espécies por Filmes",
     legend: "none"
   };
 
