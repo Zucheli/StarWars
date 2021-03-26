@@ -25,7 +25,7 @@ async function desenharGrafico() {
   var data = google.visualization.arrayToDataTable(dataArray);
 
   var options = {
-    title: "Espécies por Filmes",
+    title: "",
     legend: "none"
   };
 
@@ -58,7 +58,6 @@ async function preencherTabela() {
       `<tr>
             <td>${film.title}</td>
             <td>${moment(film.release_date).format("DD/MM/YYYY")}</td>
-            <td>${film.director}</td>
             <td>${film.episode_id}</td>
         <tr>`
     );

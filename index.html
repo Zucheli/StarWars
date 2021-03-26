@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./assets/personagens.svg">
+    <link rel="icon" href="./assets/personagens.svg" />
     <title>Star Wars - Dashboard</title>
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
@@ -15,30 +15,34 @@
         <div class="menu-items">
           <ul>
             <li>
-              <img src="./assets/dashboard.svg" alt="Dashboard" />
-              <p>Dashboard</p>
+              <a href="#dashboard">
+                <img src="./assets/dashboard.svg" alt="Dashboard" />
+                <p>Dashboard</p>
+              </a>
             </li>
             <li>
-              <img src="./assets/personagens.svg" alt="Personagens" />
-              <p>Personagens</p>
+              <a href="#cards">
+                <img src="./assets/personagens.svg" alt="Personagens" />
+                <p>Personagens</p>
+              </a>
             </li>
             <li>
-              <img src="./assets/planetas.svg" alt="Planetas" />
-              <p>Starships e Planetas</p>
+              <a href="#cards">
+                <img src="./assets/planetas.svg" alt="Planetas" />
+                <p>Starships e Planetas</p>
+              </a>
             </li>
             <li>
-              <img src="./assets/nave.svg" alt="Naves" />
-              <p>Naves Espaciais</p>
+              <a href="#cards">
+                <img src="./assets/nave.svg" alt="Naves" />
+                <p>Naves Espaciais</p>
+              </a>
             </li>
           </ul>
         </div>
-        <div class="settings">
-          <i data-feather="settings"></i>
-          <p>Configurações</p>
-        </div>
       </div>
       <div class="content">
-        <div class="cards-header">
+        <div id="cards" class="cards-header">
           <div class="card card-small">
             <div class="card-content">
               <div class="card-info">
@@ -76,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="cards-info">
+        <div id="dashboard" class="cards-info">
           <div class="table">
             <h5>Últimos Filmes</h5>
             <table id="films-table">
@@ -84,7 +88,6 @@
                 <tr>
                   <th>Título</th>
                   <th>Estréia</th>
-                  <th>Diretor</th>
                   <th>Episódio</th>
                 </tr>
               </thead>
@@ -92,7 +95,8 @@
             </table>
           </div>
           <div class="chart">
-            <div id="piechart" style="width: 320px; height: 400px"></div>
+            <h5>Espécies por Filmes</h5>
+            <div id="piechart" style="width: 250px; height: 400px"></div>
           </div>
         </div>
       </div>
